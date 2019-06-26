@@ -22,6 +22,10 @@ const styles = StyleSheet.create({
     fontSize: Metrics.texts.sizes.base,
     color: Colors.error,
   },
+  suggestion: {
+    fontSize: Metrics.texts.sizes.base,
+    color: Colors.primary,
+  },
 })
 
 type InputScreenProps = {
@@ -51,14 +55,18 @@ class InputScreen extends React.PureComponent<
   }
 
   render() {
-    const { error, loading } = this.props
+    const { error, loading, suggestions } = this.props
     const { numbers } = this.state
     return (
       <Container>
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
         <InputBox numbers={numbers} />
         {error && <Text>{error}</Text>}
-        <Container loading={loading}>@TODO results box</Container>
+        <Container loading={loading}>
+          {suggestions.map(suggestion => (
+            <Text style={styles.suggestion}>{suggestion}</Text>
+          ))}
+        </Container>
         <Text>@TODO keyboard</Text>
       </Container>
     )
