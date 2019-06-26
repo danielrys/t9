@@ -2,14 +2,24 @@
 import { from, of } from "rxjs"
 import { filter, switchMap, flatMap, catchError } from "rxjs/operators"
 import i18n from "i18n-js"
+import type { Observable } from "rxjs"
 
 // api
 import { suggestionsRequest } from "../services/api"
+
+// types
+import type { Action, Epic } from "../types"
 
 const suggestionActions = {
   GET: "ON_GET_SUGGESTIONS_REQUEST",
   SUCCESS: "ON_GET_SUGGESTIONS_REQUEST_SUCCESS",
   FAIL: "ON_GET_SUGGESTIONS_REQUEST_FAIL",
+}
+
+type SuggestionsState = {
+  loading: boolean,
+  error: ?string,
+  suggestions: Array<string>,
 }
 
 export const initialState = {
@@ -31,7 +41,10 @@ export const onGetSuggestionsRequestFail = (error: string) => ({
   error,
 })
 
-export const reducer = (state = initialState, action) => {
+export const reducer = (
+  state: SuggestionsState = initialState,
+  action: Action,
+) => {
   switch (action.type) {
     case suggestionActions.GET:
       return {
@@ -56,7 +69,7 @@ export const reducer = (state = initialState, action) => {
   }
 }
 
-const getSuggestionsEpic = action$ =>
+const getSuggestionsEpic: Epic = (action$: Observable<Action>) =>
   action$.pipe(
     filter(action => action.type === suggestionActions.GET),
     switchMap(action =>

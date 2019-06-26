@@ -10,7 +10,11 @@ import type { KeyConfig } from "../types"
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    width: Metrics.padKey.baseDimension,
+    height: Metrics.padKey.baseDimension,
+    borderWidth: Metrics.borders.widths.base,
+    borderColor: Colors.border,
+    marginBottom: Metrics.spacings.medium,
   },
   number: {
     fontSize: Metrics.texts.sizes.big,
@@ -24,7 +28,7 @@ const styles = StyleSheet.create({
 
 type PadKeyProps = {
   keyConfig: KeyConfig,
-  onPress: number => void,
+  onPress: (number | string) => void,
 }
 
 export default class PadKey extends React.PureComponent<PadKeyProps> {

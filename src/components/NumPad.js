@@ -4,6 +4,7 @@ import { View, StyleSheet } from "react-native"
 
 // components
 import PadKey from "./PadKey"
+import Metrics from "../themes/Metrics"
 
 const NUMBERS_CONFIG = [
   {
@@ -47,12 +48,17 @@ const NUMBERS_CONFIG = [
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    alignItems: "center",
+    paddingTop: Metrics.spacings.medium,
   },
 })
 
 type NumPadProps = {
-  onNumberPress: number => void,
-  onDeletePress: void => void,
+  onNumberPress: (number | string) => void,
+  onDeletePress: any => void,
 }
 
 export default class InputBox extends React.PureComponent<NumPadProps> {

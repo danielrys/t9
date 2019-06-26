@@ -4,6 +4,9 @@ export default {
       base: 84,
     },
   },
+  padKey: {
+    baseDimension: 100,
+  },
   spacings: {
     medium: 15,
   },
