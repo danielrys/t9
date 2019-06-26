@@ -53,6 +53,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     alignItems: "center",
     paddingTop: Metrics.spacings.medium,
+    maxWidth: Metrics.padKey.baseDimension * 3.5,
+    alignSelf: "center",
   },
 })
 

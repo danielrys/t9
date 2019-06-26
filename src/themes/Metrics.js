@@ -5,7 +5,7 @@ export default {
     },
   },
   padKey: {
-    baseDimension: 100,
+    baseDimension: 80,
   },
   spacings: {
     medium: 15,

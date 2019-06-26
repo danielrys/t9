@@ -55,15 +55,25 @@ class InputScreen extends React.PureComponent<
   }
 
   handleNumberPress = (number: number) => {
-    this.setState(state => ({
-      numbers: [...state.numbers, number],
-    }))
+    this.setState(
+      state => ({
+        numbers: [...state.numbers, number],
+      }),
+      () => {
+        this.handleGetSuggestions()
+      },
+    )
   }
 
   handleDeletePress = () => {
-    this.setState(state => ({
-      numbers: R.dropLast(1, state.numbers),
-    }))
+    this.setState(
+      state => ({
+        numbers: R.dropLast(1, state.numbers),
+      }),
+      () => {
+        this.handleGetSuggestions()
+      },
+    )
   }
 
   render() {
@@ -73,7 +83,7 @@ class InputScreen extends React.PureComponent<
       <Container>
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
         <InputBox numbers={numbers} />
-        {error && <Text>{error}</Text>}
+        {error && <Text style={styles.error}>{error}</Text>}
         <ScrollableContainer loading={loading}>
           {suggestions.map(suggestion => (
             <Text style={styles.suggestion} key={suggestion}>

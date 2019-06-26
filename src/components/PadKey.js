@@ -15,6 +15,9 @@ const styles = StyleSheet.create({
     borderWidth: Metrics.borders.widths.base,
     borderColor: Colors.border,
     marginBottom: Metrics.spacings.medium,
+    borderRadius: Metrics.padKey.baseDimension,
+    alignItems: "center",
+    justifyContent: "center",
   },
   number: {
     fontSize: Metrics.texts.sizes.big,
