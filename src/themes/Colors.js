@@ -3,4 +3,5 @@ export default {
   textPrimary: "rgb(0,0,0)",
   background: "rgb(255,255,255)",
   border: "rgb(150,150,150)",
+  error: "rgb(255,0,0)",
 }

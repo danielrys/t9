@@ -12,11 +12,15 @@ import { Container, InputBox } from "../components"
 import { onGetSuggestionsRequest } from "../redux/SuggestionsRedux"
 
 // theme
-import { Metrics } from "../themes"
+import { Metrics, Colors } from "../themes"
 
 const styles = StyleSheet.create({
   title: {
     fontSize: Metrics.texts.sizes.title,
+  },
+  error: {
+    fontSize: Metrics.texts.sizes.base,
+    color: Colors.error,
   },
 })
 
@@ -47,12 +51,13 @@ class InputScreen extends React.PureComponent<
   }
 
   render() {
+    const { error } = this.props
     const { numbers } = this.state
     return (
       <Container>
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
         <InputBox numbers={numbers} />
-        <Text>@TODO error display box</Text>
+        {error && <Text>{error}</Text>}
         <Text>@TODO results box</Text>
         <Text>@TODO keyboard</Text>
       </Container>
