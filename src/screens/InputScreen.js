@@ -74,7 +74,10 @@ class InputScreen extends React.PureComponent<
         numbers: R.dropLast(1, state.numbers),
       }),
       () => {
-        this.handleGetSuggestions()
+        const {
+          numbers: { length },
+        } = this.state
+        if (length > 0) this.handleGetSuggestions()
       },
     )
   }

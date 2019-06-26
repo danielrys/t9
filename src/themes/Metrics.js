@@ -30,6 +30,6 @@ export default {
     },
   },
   layoutSizes: {
-    base: 100,
+    base: 120,
   },
 }
