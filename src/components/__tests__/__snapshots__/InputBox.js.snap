@@ -9,6 +9,7 @@ exports[`InputBox component renders with given numbers prop 1`] = `
       "borderWidth": 1,
       "height": 35,
       "justifyContent": "center",
+      "marginVertical": 10,
     }
   }
 >
@@ -34,6 +35,7 @@ exports[`InputBox component renders without numbers prop 1`] = `
       "borderWidth": 1,
       "height": 35,
       "justifyContent": "center",
+      "marginVertical": 10,
     }
   }
 >

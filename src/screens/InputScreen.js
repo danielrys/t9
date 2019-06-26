@@ -17,6 +17,8 @@ import { Metrics, Colors } from "../themes"
 const styles = StyleSheet.create({
   title: {
     fontSize: Metrics.texts.sizes.title,
+    marginVertical: Metrics.spacings.small,
+    alignSelf: "center",
   },
   error: {
     fontSize: Metrics.texts.sizes.base,

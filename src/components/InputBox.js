@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     borderColor: Colors.border,
     height: Metrics.inputBox.height,
     justifyContent: "center",
+    marginVertical: Metrics.spacings.small,
   },
   text: {
     fontSize: Metrics.texts.sizes.base,

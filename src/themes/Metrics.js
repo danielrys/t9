@@ -11,6 +11,7 @@ export default {
     height: 35,
   },
   spacings: {
+    small: 10,
     medium: 15,
   },
   radii: {
