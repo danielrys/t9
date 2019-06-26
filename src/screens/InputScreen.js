@@ -87,6 +87,7 @@ class InputScreen extends React.PureComponent<
   render() {
     const { error, loading, suggestions } = this.props
     const { numbers } = this.state
+    // @TODO replace ScrollView with Flatlist to increase tragic performance...
     return (
       <Container padding>
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>

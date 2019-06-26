@@ -10,16 +10,16 @@ import { suggestionsRequest } from "../services/api"
 // types
 import type { Action, Epic } from "../types"
 
-const suggestionActions = {
-  GET: "ON_GET_SUGGESTIONS_REQUEST",
-  SUCCESS: "ON_GET_SUGGESTIONS_REQUEST_SUCCESS",
-  FAIL: "ON_GET_SUGGESTIONS_REQUEST_FAIL",
-}
-
 type SuggestionsState = {
   loading: boolean,
   error: ?string,
   suggestions: Array<string>,
+}
+
+const suggestionActions = {
+  GET: "ON_GET_SUGGESTIONS_REQUEST",
+  SUCCESS: "ON_GET_SUGGESTIONS_REQUEST_SUCCESS",
+  FAIL: "ON_GET_SUGGESTIONS_REQUEST_FAIL",
 }
 
 export const initialState = {

@@ -4,6 +4,8 @@ import { View, StyleSheet } from "react-native"
 
 // components
 import PadKey from "./PadKey"
+
+// theme
 import Metrics from "../themes/Metrics"
 
 const NUMBERS_CONFIG = [

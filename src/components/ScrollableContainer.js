@@ -5,6 +5,7 @@ import { View, StyleSheet, ScrollView } from "react-native"
 // components
 import Container from "./Container"
 
+// types
 import type { ViewType } from "../types"
 
 type ScrollableContainerProps = {
