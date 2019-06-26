@@ -4,7 +4,7 @@ import renderer from "react-test-renderer"
 // components
 import InputBox from "../InputBox"
 
-describe("Button component", () => {
+describe("InputBox component", () => {
   it("renders without numbers prop", () => {
     const tree = renderer.create(<InputBox />).toJSON()
     expect(tree).toMatchSnapshot()

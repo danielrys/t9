@@ -6,7 +6,7 @@ import i18n from "i18n-js"
 import R from "ramda"
 
 // components
-import { Container, InputBox } from "../components"
+import { Container, ScrollableContainer, InputBox, NumPad } from "../components"
 
 // redux
 import { onGetSuggestionsRequest } from "../redux/SuggestionsRedux"
@@ -54,6 +54,18 @@ class InputScreen extends React.PureComponent<
     onGetSuggestionsRequest(numberSequence)
   }
 
+  handleNumberPress = (number: number) => {
+    this.setState(state => ({
+      numbers: [...state.numbers, number],
+    }))
+  }
+
+  handleDeletePress = () => {
+    this.setState(state => ({
+      numbers: R.dropLast(1, state.numbers),
+    }))
+  }
+
   render() {
     const { error, loading, suggestions } = this.props
     const { numbers } = this.state
@@ -62,12 +74,17 @@ class InputScreen extends React.PureComponent<
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
         <InputBox numbers={numbers} />
         {error && <Text>{error}</Text>}
-        <Container loading={loading}>
+        <ScrollableContainer loading={loading}>
           {suggestions.map(suggestion => (
-            <Text style={styles.suggestion}>{suggestion}</Text>
+            <Text style={styles.suggestion} key={suggestion}>
+              {suggestion}
+            </Text>
           ))}
-        </Container>
-        <Text>@TODO keyboard</Text>
+        </ScrollableContainer>
+        <NumPad
+          onNumberPress={this.handleNumberPress}
+          onDeletePress={this.handleDeletePress}
+        />
       </Container>
     )
   }

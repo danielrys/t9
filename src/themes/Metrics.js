@@ -12,8 +12,10 @@ export default {
   },
   texts: {
     sizes: {
+      small: 12,
       base: 16,
       title: 20,
+      big: 24,
     },
   },
   borders: {

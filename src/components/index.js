@@ -1,4 +1,5 @@
 export Button from "./Button"
 export Container from "./Container"
 export InputBox from "./InputBox"
+export NumPad from "./NumPad"
 export ScrollableContainer from "./ScrollableContainer"
