@@ -3,7 +3,7 @@ import * as React from "react"
 import { View, ActivityIndicator } from "react-native"
 
 // styles
-import { Colors } from "../themes"
+import { Colors, Metrics } from "../themes"
 
 import type { ViewType } from "../types"
 
@@ -11,6 +11,7 @@ export type ContainerProps = {
   children?: React.Node,
   style?: ViewType,
   loading: boolean,
+  padding?: boolean,
 }
 
 const styles = {
@@ -26,19 +27,24 @@ const styles = {
     justifyContent: "center",
     flex: 1,
   },
+  padding: {
+    padding: Metrics.spacings.medium,
+  },
 }
 
 export default class Container extends React.PureComponent<ContainerProps> {
   static defaultProps = {
     style: {},
     children: null,
+    padding: false,
   }
 
   render() {
-    const { children, style, loading } = this.props
+    const { children, style, loading, padding } = this.props
+    const additionalStyles = padding ? [styles.padding] : []
 
     return (
-      <View style={styles.outerWrapper}>
+      <View style={[styles.outerWrapper, ...additionalStyles]}>
         <View style={[styles.container, style]}>
           {loading ? (
             <View style={styles.spinner}>

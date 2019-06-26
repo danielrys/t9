@@ -88,7 +88,7 @@ class InputScreen extends React.PureComponent<
     const { error, loading, suggestions } = this.props
     const { numbers } = this.state
     return (
-      <Container>
+      <Container padding>
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
         <InputBox numbers={numbers} />
         {error && <Text style={styles.error}>{error}</Text>}
