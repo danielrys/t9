@@ -6,7 +6,7 @@ import i18n from "i18n-js"
 import R from "ramda"
 
 // components
-import { Container } from "../components"
+import { Container, InputBox } from "../components"
 
 // redux
 import { onGetSuggestionsRequest } from "../redux/SuggestionsRedux"
@@ -47,10 +47,11 @@ class InputScreen extends React.PureComponent<
   }
 
   render() {
+    const { numbers } = this.state
     return (
       <Container>
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
-        <Text>@TODO input box</Text>
+        <InputBox numbers={numbers} />
         <Text>@TODO error display box</Text>
         <Text>@TODO results box</Text>
         <Text>@TODO keyboard</Text>

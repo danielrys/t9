@@ -16,4 +16,9 @@ export default {
       title: 20,
     },
   },
+  borders: {
+    widths: {
+      base: 1,
+    },
+  },
 }
