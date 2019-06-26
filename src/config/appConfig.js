@@ -1,4 +1,4 @@
 export default {
-  baseUrl: "@TODO",
+  baseUrl: "http://localhost:3000",
   defaultLocale: "en-US",
 }

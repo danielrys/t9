@@ -36,9 +36,13 @@ export const onGetSuggestionsRequestSuccess = (suggestions: Array<string>) => ({
   type: suggestionActions.SUCCESS,
   suggestions,
 })
-export const onGetSuggestionsRequestFail = (error: string) => ({
+export const onGetSuggestionsRequestFail = (
+  error: string,
+  errorObject: Error,
+) => ({
   type: suggestionActions.FAIL,
   error,
+  errorObject,
 })
 
 export const reducer = (
@@ -80,7 +84,7 @@ const getSuggestionsEpic: Epic = (action$: Observable<Action>) =>
         catchError(e => {
           const errorMessage =
             (e && e.message) || i18n.t("_errorMessage.unknown")
-          return of(onGetSuggestionsRequestFail(errorMessage))
+          return of(onGetSuggestionsRequestFail(errorMessage, e))
         }),
       ),
     ),

@@ -12,6 +12,8 @@ export const axios = axiosLib.create({
 })
 
 export const suggestionsRequest = (numberSequence: string) =>
-  axios.get("/@TODO", {
-    numberSequence,
+  axios.get("/suggestions", {
+    params: {
+      numbers: numberSequence,
+    },
   })
