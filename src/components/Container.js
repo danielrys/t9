@@ -1,6 +1,6 @@
 // @flow
 import * as React from "react"
-import { SafeAreaView, View, ActivityIndicator } from "react-native"
+import { View, ActivityIndicator } from "react-native"
 
 // styles
 import { Colors } from "../themes"
@@ -38,7 +38,7 @@ export default class Container extends React.PureComponent<ContainerProps> {
     const { children, style, loading } = this.props
 
     return (
-      <SafeAreaView style={styles.outerWrapper}>
+      <View style={styles.outerWrapper}>
         <View style={[styles.container, style]}>
           {loading ? (
             <View style={styles.spinner}>
@@ -48,7 +48,7 @@ export default class Container extends React.PureComponent<ContainerProps> {
             children
           )}
         </View>
-      </SafeAreaView>
+      </View>
     )
   }
 }

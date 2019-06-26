@@ -51,14 +51,14 @@ class InputScreen extends React.PureComponent<
   }
 
   render() {
-    const { error } = this.props
+    const { error, loading } = this.props
     const { numbers } = this.state
     return (
       <Container>
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
         <InputBox numbers={numbers} />
         {error && <Text>{error}</Text>}
-        <Text>@TODO results box</Text>
+        <Container loading={loading}>@TODO results box</Container>
         <Text>@TODO keyboard</Text>
       </Container>
     )
