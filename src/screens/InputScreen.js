@@ -22,6 +22,9 @@ const styles = StyleSheet.create({
     fontSize: Metrics.texts.sizes.base,
     color: Colors.error,
   },
+  suggestions: {
+    height: Metrics.layoutSizes.base,
+  },
   suggestion: {
     fontSize: Metrics.texts.sizes.base,
     color: Colors.primary,
@@ -84,7 +87,7 @@ class InputScreen extends React.PureComponent<
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
         <InputBox numbers={numbers} />
         {error && <Text style={styles.error}>{error}</Text>}
-        <ScrollableContainer loading={loading}>
+        <ScrollableContainer loading={loading} style={styles.suggestions}>
           {suggestions.map(suggestion => (
             <Text style={styles.suggestion} key={suggestion}>
               {suggestion}

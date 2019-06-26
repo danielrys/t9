@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "start-server": "babel-node --presets es2015 server/server.js"
+    "start-server": "babel-node --presets es2015 server/server.js",
+    "reverse-port": "adb reverse tcp:3000 tcp:3000"
   },
   "dependencies": {
     "axios": "^0.18.0",

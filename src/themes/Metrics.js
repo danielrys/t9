@@ -29,4 +29,7 @@ export default {
       base: 1,
     },
   },
+  layoutSizes: {
+    base: 100,
+  },
 }
