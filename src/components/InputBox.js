@@ -10,6 +10,8 @@ const styles = StyleSheet.create({
     borderWidth: Metrics.borders.widths.base,
     borderRadius: Metrics.radii.base,
     borderColor: Colors.border,
+    height: Metrics.inputBox.height,
+    justifyContent: "center",
   },
   text: {
     fontSize: Metrics.texts.sizes.base,
@@ -23,7 +25,7 @@ type InputBoxProps = {
 
 export default class InputBox extends React.PureComponent<InputBoxProps> {
   render() {
-    const { numbers } = this.props
+    const { numbers = [] } = this.props
     return (
       <View style={styles.container}>
         <Text style={styles.text}>{numbers.join("")}</Text>

@@ -7,6 +7,9 @@ export default {
   padKey: {
     baseDimension: 80,
   },
+  inputBox: {
+    height: 35,
+  },
   spacings: {
     medium: 15,
   },

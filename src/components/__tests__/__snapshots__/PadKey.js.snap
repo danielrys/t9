@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PadKey component renders correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "rgb(150,150,150)",
+      "borderRadius": 80,
+      "borderWidth": 1,
+      "height": 80,
+      "justifyContent": "center",
+      "marginBottom": 15,
+      "opacity": 1,
+      "width": 80,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "rgb(0,0,0)",
+        "fontSize": 24,
+      }
+    }
+  >
+    1
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "rgb(50,50,50)",
+        "fontSize": 12,
+      }
+    }
+  >
+    abc
+  </Text>
+</View>
+`;

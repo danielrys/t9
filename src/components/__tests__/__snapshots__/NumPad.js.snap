@@ -1,0 +1,459 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumPad component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "flexWrap": "wrap",
+      "justifyContent": "space-around",
+      "maxWidth": 280,
+      "paddingTop": 15,
+    }
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      1
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      2
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      ABC
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      3
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      DEF
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      4
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      GHI
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      5
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      JKL
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      6
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      MNO
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      7
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      PQRS
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      8
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      TUV
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      9
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      WXYZ
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "borderColor": "rgb(150,150,150)",
+        "borderRadius": 80,
+        "borderWidth": 1,
+        "height": 80,
+        "justifyContent": "center",
+        "marginBottom": 15,
+        "opacity": 1,
+        "width": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "rgb(0,0,0)",
+          "fontSize": 24,
+        }
+      }
+    >
+      &lt;
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "rgb(50,50,50)",
+          "fontSize": 12,
+        }
+      }
+    >
+      DEL
+    </Text>
+  </View>
+</View>
+`;
