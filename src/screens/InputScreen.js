@@ -87,18 +87,14 @@ class InputScreen extends React.PureComponent<
   render() {
     const { error, loading, suggestions } = this.props
     const { numbers } = this.state
-    // @TODO replace ScrollView with Flatlist to increase tragic performance...
+    const joinedSuggestions = suggestions.join(", ")
     return (
       <Container padding>
         <Text style={styles.title}>{i18n.t("inputScreen.title")}</Text>
         <InputBox numbers={numbers} />
         {error && <Text style={styles.error}>{error}</Text>}
         <ScrollableContainer loading={loading} style={styles.suggestions}>
-          {suggestions.map(suggestion => (
-            <Text style={styles.suggestion} key={suggestion}>
-              {suggestion}
-            </Text>
-          ))}
+          <Text style={styles.suggestion}>{joinedSuggestions}</Text>
         </ScrollableContainer>
         <NumPad
           onNumberPress={this.handleNumberPress}
