@@ -10,7 +10,7 @@
     "reverse-port": "adb reverse tcp:3000 tcp:3000"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "i18n-js": "^3.2.1",
     "ramda": "^0.26.1",
